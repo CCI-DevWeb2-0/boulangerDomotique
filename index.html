@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title>Boulanger Domotique - Accueil</title>
     <meta charset="UTF-8">
@@ -7,76 +8,126 @@
     <meta name="description" content="Découvrez avec Boulanger, l'innovation domotique au service de votre maison.">
     <meta property="og:image" content="image.jpg">
     <meta property="og:title" content="BOULANGER DOMOTIQUE - Innovation - Confort - Sécurité">
-    <meta property="og:description" content="Découvrez avec Boulanger, l'innovation domotique au service de votre maison.">
+    <meta property="og:description"
+        content="Découvrez avec Boulanger, l'innovation domotique au service de votre maison.">
     <script src="https://kit.fontawesome.com/0f3e68ca00.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-        <!--Barre de NAVIGATION-->
-        <div class="navBar">
-            <div class="logo"></div> 
-            <a href="index.html"><img src="" alt="LogoBoulanger"></a><!--Logo en format SVG de préférence-->
-            <!-- Menu de Navigation-->
-            <div class="menuNav">
-                <ul>
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="Product.html">Nos Produits</a></li>
-                    <li><a href="team.html">Notre Equipe</a></li>
-                    <li><a href="project.html">Projetez-vous</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            <!--Fin du menu Navigation-->
-            </div>
+    <!--Barre de NAVIGATION-->
+    <div class="navBar">
+        <div class="logo"></div> 
+        <a href="index.html"><img src="images\logo-boulanger.png" alt="LogoBoulanger" width="30%"></a>
+        <!-- Menu de Navigation-->
+        <div class="menuNav">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="Product.html">Nos Produits</a></li>
+                <li><a href="team.html">Notre Equipe</a></li>
+                <li><a href="project.html">Projetez-vous</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        <!--Fin du menu Navigation-->
         </div>
-        <!-- Fin de la Barre de NAVIGATION-->
-
-
+    </div>
+    <!-- Fin de la Barre de NAVIGATION-->
     <!-- Début de HEADER-->
     <div class="header">
-        <img src="images/homePage.jpg" alt="Image de fond de la homePage"> 
-        <h1>Confort, Sécurité, Innovation</h1>
-        <p>Votre maison connectée à votre service</p>
-        <button class="btn1">Projetez-vous !</button>
+        <div class="container">
+            <img src="images/nousContacter.png" alt="Image de fond nousContacter.jpg" width="100%">
+            <div class="text">
+                <h1>UNE QUESTION ? UN RENSEIGNEMENT ?<br>CONTACTEZ-NOUS!</h1>
+                <div class="textimg">
+                    <span><img class="btnctn" src="images/5489.png" alt="téléphone.jpg" width="100%"><a class="btnctnrep" href="#"></a></span>
+                    <span><img class="btnctn" src="images/9854.png" alt="mail.jpg" width="100%"><a class="btnctnrep2" href="#"></a></span>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <h2>OU BIEN EN REMPLISSANT CE <br><span>FORMULAIRE</span></h2>
+        <form>
+            <input class="formcase" type="text" placeholder="Nom">
+            <input class="formcase" type="text" placeholder="Prénom">
+            <input class="formcase" type="email" placeholder="Votre adresse mail">
+            <br>
+            <br>
+            <textarea class="formcase" name="text" rows=4 cols=40></textarea>
+            <p>Souhaitez-vous recevoir notre newsletter?</p>
+            <input class="formcase" type= "radio" name="charset" value="Oui"> Oui
+            <input class="formcase" type= "radio" name="charset" value="Non"> Non
+            <a class="btn1" href="#">ENVOYER</a>
+        </form>
+<br>
+       
     </div>
-
-
-    <!--Début de Feature-->
-
-    <!--Fin du Feature-->
-
+<br>
+    <!--Début container réseau sociaux et bouton vers formulaire -->
+    <div class="ctn-newsletter">
+        <div class="box1">
+            
+            <h2>RESTONS EN CONTACT !</h2>
+           
+        
+        </div>
+         
     
-    <!--Les produits phares-->
+            <!-- Container icons Réseau-->
+           
 
-    <!--Fin de Produit phares-->
+            <a href="https://www.facebook.com/Boulanger.Electromenager.Multimedia/timeline/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/boulanger"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/Boulanger"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/boulanger/"><i class="fab fa-instagram"></i></a>
 
+            <div class="box3">
+                <div id="download">
+                    <h2> Téléchargez l’app</h2>
+                    <a href="https://www.boulanger.com/evenement/applications"><img src="https://www.boulanger.com/content/static/bcom/desktop/evenements/2016/04_lancement_appli/images/store-google.png" alt="https://www.boulanger.com/content/static/bcom/desktop/evenements/2016/04_lancement_appli/images/store-google.png"></a>
+                    <a href="https://www.boulanger.com/evenement/applications"><img src="https://www.boulanger.com/content/static/bcom/desktop/evenements/2016/04_lancement_appli/images/store-apple.png" alt="https://www.boulanger.com/content/static/bcom/desktop/evenements/2016/04_lancement_appli/images/store-apple.png" id="apple"></a>
+                             
+                
+                </div>
+            </div>
 
-    <!--Footer /!\ NE PAS TOUCHER le code HTML suivant-->
-    <!--Bloc icons Réseau-->
-    <div class="social">
-        <ul>
-        <li><i class="fab fa-facebook-f"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-youtube"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        </ul>
+        <div class="box4"> 
+            
+            
+            <p>BOULANGER, responsable du traitement, collecte votre adresse email pour vous envoyer notre newsletter.<br>
+            Vous bénéficiez d’un droit d’accès, de rectification et d’opposition. Pour plus d’information sur vos droits
+            informatique & Liberté <a href="https://www.boulanger.com/evenement/infos-legales#vie-privee" id="Clic">cliquez ici</a></p>
+                
+        </div>
+        <!--Fin de container icon réseau-->
     </div>
-    <!--Fin de bloc icon réseau-->
+    <!--Fin container réseau sociaux et bouton vers formlaire-->
 
-    <!--Bloc information FOOTER-->
-    <div class="blocFooter">
+    <!-- FOOTER -->
+    <!--container information FOOTER-->
+    <div class="blocFooter1">
+
+        <div class="blocFooter2"> 
         <!--Bloc numéros 1-->
-        <h3 class="blocFooterInfo">Besoin d'aide</h3>
-        <ul>
+         <ul>
+            <h3 class="blocFooterInfo">Besoin d'aide</h3>
             <li>Contactez-nous</li>
             <li>Questions fréquentes</li>
             <li>Suivre une commande</li>
             <li> Retourner un produit</li>
             <li>Nos conditions de livraison</li>
-            <li>Accès sourds et malentendants</li> <!--Ajouter logo sourds et malentendants-->
-        </ul>
-        <!--Bloc numéros 2-->
-        <h3 class="blocFooterInfo">A propos de Boulanger</h3>
-        <ul>
+            <br>
+            <li><img src="images/picto_malentendant.jpg" alt="picto jpg" width="250px" ></li><!--Ajouter logo sourds et malentendants-->
+         </ul>
+    </div>
+        
+    <div class="blocFooter2">     
+      
+         <ul>
+            <h3 class="blocFooterInfo">A propos de Boulanger</h3>
             <li>Qui sommes nous</li>
             <li>Si bien ensemble</li>
             <li>Nos offres d’emploi</li>
@@ -87,24 +138,38 @@
             <li>L'espace fidélité</li>
             <li>Fondation Boulanger</li>
             <li>Un monde de liens</li>
-        </ul>
+         </ul>
         <!--Bloc numéros 3-->
-        <h3 class="blocFooterInfo">Informations légales</h3>
-        <ul>
+        </div>
+
+        <div class="blocFooter2"> 
+
+        
+         <ul>
+            <h3 class="blocFooterInfo">Informations légales</h3>
             <li>Nos Conditions de Vente</li>
             <li>Mentions légales</li>
             <li>Données personnelles</li>
             <li>Utilisation des Cookies</li>
             <li>La place de marché</li>
             <li>Les avis en ligne</li>
-        </ul>
-        <!--Bloc numéros 4-->
-        <h3 class="blocFooterInfo">Informations sécurité</h3>
-        <ul>
+         </ul>
+
+        </div>
+
+
+        <div class="blocFooter2"> <!--Bloc numéros 4-->
+        
+         <ul>
+            <h3 class="blocFooterInfo">Informations sécurité</h3>
             <li>Rappel produit</li>
             <li>Alerte fraude</li>
-        </ul>
-    </div>
+         </ul>
+
+        </div>
+    <!--Fin de Footer-->
+        </div>
     <!--Fin de Footer-->
 </body>
+
 </html>
