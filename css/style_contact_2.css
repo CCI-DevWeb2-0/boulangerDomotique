@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* NE PAS MODIFIER LE CODE DU BODY SVP */
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+}
+
+.container .text {
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    color: white;
+    width: 70%;
+}
+
+.textimg {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    text-align: justify;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 150%;
+    color: white;
+    width: 70%;
+}
+
+.btnctct{
+    display: inline-block;
+    text-align: center;
+    background-color: #FD5300;
+    border-radius: 150%;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: white;
+    text-decoration: none;
+    border: solid black 2px;
+    transition: 0.4s;
+    
+}
+
+
+span:hover .btnctct{
+    display: none;
+    box-shadow: 0px 5px 10px black;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+  
+span:hover .btnctctrep:before{
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    border-radius: 150%;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: white;
+    text-decoration: none;
+    border: solid black 2px;
+    content:"0983838484";
+    transition: 0.4s;
+}
+
+span:hover .btnctctrep2:before{
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    border-radius: 150%;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: white;
+    text-decoration: none;
+    border: solid black 2px;
+    content:"contact@mail.com";
+    transition: 0.4s;
+}
+
+.btn1{
+    background-color: #FD5300;
+    border-radius: 16px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: solid black 1px;
+    
+}
+
+.btn1:hover{
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+background-color: black;
+color: white;
+}
+
