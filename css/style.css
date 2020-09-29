@@ -10,6 +10,71 @@ body {
     line-height: 1.25;
 }
 
+/* navbarre*/
+a{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FD5300; 
+}
+
+.liste_ul {
+    display: flex;
+    float: right;
+    width: 140px;
+    height: 50px;
+    left: 548px;
+    top: 51px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FD5300; 
+    text-align: center;
+    align-items: center;
+    padding-right: 20%;
+}
+
+.liste_ul li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.liste_ul li:hover{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    background: #A6D5DD;
+    width: 150%;
+    height: 150%;
+    border-radius: 150%;
+    cursor: pointer;
+}
+
+.conteneur_barre_nav{
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.logo{
+    margin-left: 5%;
+    margin-top: 0.5%;
+}
+
+button{
+    top: 11%;
+    right: 1%;
+    cursor: pointer;
+}
+
+/* header*/
 .headerBg {
         position: relative;
         z-index: 1;
@@ -103,4 +168,267 @@ body {
     width: 250px;
     height: 250px;
     border: solid black 2px;
+}
+
+
+/*Page Team*/
+.header-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+}
+
+.container .text {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    color: white;
+    width: 70%;
+}
+
+.textimg {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    text-align: justify;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 190%;
+    color: white;
+    width: 70%;
+}
+
+.btnctn{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 150%;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: white;
+    text-decoration: none;
+    border: solid black 2px;
+    transition: 0.4s;
+    
+}
+
+
+span:hover .btnctn{
+    display: none;
+    box-shadow: 0px 5px 10px black;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+  
+span:hover .btnctnrep:before{
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 150%;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: black;
+    text-decoration: none;
+    border: solid black 2px;
+    content:"0983838484";
+}
+
+span:hover .btnctnrep2:before{
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 150%;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    color: black;
+    text-decoration: none;
+    border: solid black 2px;
+    content:"contact@mail.com";
+}
+
+.btn1{
+    background-color: #FD5300;
+    border-radius: 16px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: solid black 2px;
+    
+}
+
+.btn1:hover{
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+background-color: black;
+color: white;
+}
+
+.formcase{
+    border: solid black 2px;
+}
+
+.formcase:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btnproj{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: absolute;
+    text-align: justify;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 150%;
+    width: 20%;
+}
+
+.img_ronde{
+    border: solid black 2pxs;
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50%;
+    width:150px;
+    height:150px;
+}
+
+.ctn_features{
+    display: flex;
+    justify-content: space-between;
+}
+
+.featbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptTeam {
+    text-align: center;
+}
+
+/* FOOTER */
+.blocFooter1
+{
+    background-color: #E8E8E8;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.blocFooter2{
+
+    margin-top: 20px;
+    margin-left: auto;
+    width: 20%;
+    min-width: 12.5rem;
+    margin-bottom: 1.875rem;
+    padding: 0 .625rem; 
+    flex-shrink: 0;
+}
+
+.blocFooterInfo{
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #434748;
+}
+
+ ul li{
+    color: #434748;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.625rem;
+}
+
+.picto {
+    width: 200px;
+    height: 20px;
+}
+
+.ctn-newsletter{
+    overflow: hidden;
+    color: white;
+    display: flexbox;
+    background-color:#4d5152 ;
+    text-align: center;
+}
+
+#newsletterbutton {
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    color: #434748 ;
+    background-color: rgba(118, 191, 203, 1);
+    border: none;
+}
+
+.box1{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.box2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box3 img:hover {
+    color:#FD5300;
+
+}
+
+
+.box4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#clic{
+    color: rgba(118, 191, 203, 1);
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 5px;
+    
+}
+#clic:visited{
+    color: white;
+    text-decoration: none;
+}
+
+i{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#apple{
+    height: 55px;
+    width: 167px;
 }
