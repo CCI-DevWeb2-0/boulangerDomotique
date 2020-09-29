@@ -23,7 +23,7 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('../images/homePage.jpg') no-repeat center;
+        background: url('/images/homePage.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -95,7 +95,7 @@ body {
     border-radius: 15px
 }
 
-.img_rounded {
+.image-ronde {
     overflow:hidden;
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
@@ -103,3 +103,4 @@ body {
     width: 250px;
     height: 250px;
     border: solid black 2px;
+}
