@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
-/* NE PAS MODIFIER LE CODE DU BODY SVP */
+/*  ///////////////////////// NE PAS MODIFIER LE CODE DU BODY SVP ///////////////////////////////// */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
@@ -10,13 +10,13 @@ body {
     line-height: 1.25;
 }
 
-/* navbarre*/
+/*  ///////////////////////////// NAVBARRE ////////////////////////////////////*/
+
 a{
     text-decoration: none;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #FD5300; 
 }
@@ -24,7 +24,7 @@ a{
 .liste_ul {
     display: flex;
     float: right;
-    width: 140px;
+    width: 330px;
     height: 50px;
     left: 548px;
     top: 51px;
@@ -54,7 +54,7 @@ a{
     background: #A6D5DD;
     width: 150%;
     height: 150%;
-    border-radius: 150%;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -73,8 +73,10 @@ button{
     right: 1%;
     cursor: pointer;
 }
+/*  ///////////////////////////// FIN NAVBARRE ////////////////////////////////////:*/
 
-/* header*/
+/* ///////////////////////////////// HEADER PAGE HOME ////////////////////////////////////*/
+
 .headerBg {
         position: relative;
         z-index: 1;
@@ -103,34 +105,22 @@ button{
     font-size: 56px;
     font-weight: bold;
 }
-.headerText h1 {
+.headerText > h1 {
         text-transform: uppercase;
         font-weight: bold;
 }
 
-.headerText p {
+.headerText > p {
     font-size: 56px;
 }
 
-.btn1 {
-    width: 350px;
-    height: 130px;
-    margin: 50px;
-    border: none; 
-    color: #fff;
-    background-color:#FD5300 ;
-    font-size: 36px;
-    font-weight: bold;
-    border-radius: 15px
-}
-
-.ctn-features h2 {
+.ctn-features > h2 {
     text-transform: uppercase;
     font-size: 30px;
+    margin:30px 0 0 0 ;
 }
 
-.ctn-features p {
-    padding: 50px;
+.ctn-features > p {
     font-size: 18px;
     text-align: center;
 }
@@ -148,16 +138,40 @@ button{
     align-items: center;
 }
 
-.btn2 {
-    width: auto;
-    height: 50px;
+.btn1 {
+    width: 350px;
+    height: 130px;
     margin: 50px;
     border: none; 
     color: #fff;
     background-color:#FD5300 ;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: bold;
     border-radius: 15px
+}
+
+.btn1:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(118, 191, 203, 1);
+    color: white;
+}
+
+.btn2 {
+    width: auto;
+    margin-bottom: 30px;
+    height: 30px;
+    border: none; 
+    color: #fff;
+    background-color:#FD5300 ;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.btn2:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(118, 191, 203, 1);
+    color: white;
 }
 
 .image-ronde {
@@ -169,10 +183,167 @@ button{
     height: 250px;
     border: solid black 2px;
 }
+/* ///////////////////////////////// FIN HEADER PAGE HOME ////////////////////////////////////*/
+
+/* ////////////////////// PAGE PROJETEZ-VOUS ///////////////////////*/
+
+.hd-image-Bg {
+        position: relative;
+        z-index: 1;
+}
+
+.hd-image-Bg::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('/images/projetezVous.jpg') no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;;
+        opacity: .4;
+}
+
+.hd-Text {
+    z-index: 1;
+    padding: 80px;
+    text-align: center;
+    font-size: 56px;
+}
+
+.hd-Text > h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.hd-Text p {
+    font-size: 56px;
+}
+
+.ctn-features1 h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.ctn-features2 h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.ctn-features3 h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.ctn-features1 p {
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ctn-features2 p {
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ctn-features3 p {
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+}
 
 
-/*Page Team*/
-.header-team{
+.features {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+}
+
+.all-features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ctn-features1 {
+    grid-column: 0/1;
+    text-align: center; 
+}
+
+.ctn-features2 {
+    grid-column: 2/3;
+ 
+    text-align: center;
+}
+
+.ctn-features3 {
+    grid-column:  3/4;
+    text-align: center;
+}
+
+/* ////////////////////// PAGE PROJETEZ-VOUS ///////////////////////*/
+
+
+/*//////////////////////////////// PAGE TEAM ET FORMULAIRE //////////////////////////////*/
+
+.hd-image-Bg1 {
+        position: relative;
+        z-index: 1;
+}
+
+.hd-image-Bg1::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('/images/notreEquipe.jpg') no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;;
+        opacity: .4;
+}
+.hd-image-Bg2 {
+        position: relative;
+        z-index: 1;
+}
+
+.hd-image-Bg2::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        background: url('/images/nousContacter.png') no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;;
+        opacity: .4;
+}
+
+.hd-Text {
+    z-index: 1;
+    padding: 80px;
+    text-align: center;
+    font-size: 56px;
+}
+
+.hd-Text > h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +353,6 @@ button{
 .container {
     display: flex;
     position: relative;
-    margin-top: 5%;
 }
 
 .container .text {
@@ -196,39 +366,30 @@ button{
     right: 0;
     top: 20%;
     color: white;
-    width: 70%;
+    width: 100%;
 }
 
 .textimg {
     display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    position: absolute;
-    text-align: justify;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 190%;
+    justify-content: space-around;
+    margin: auto;
     color: white;
-    width: 70%;
 }
 
 .btnctn{
     display: inline-block;
     text-align: center;
     background-color: white;
-    border-radius: 150%;
-    padding: 0px;
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    line-height: 150px;
+    line-height: 50px;
     color: white;
     text-decoration: none;
     border: solid black 2px;
     transition: 0.4s;
     
 }
-
 
 span:hover .btnctn{
     display: none;
@@ -243,7 +404,7 @@ span:hover .btnctnrep:before{
     text-align: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: white;
-    border-radius: 150%;
+    border-radius: 50%;
     padding: 0px;
     width: 150px;
     height: 150px;
@@ -259,7 +420,7 @@ span:hover .btnctnrep2:before{
     text-align: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: white;
-    border-radius: 150%;
+    border-radius: 50%;
     padding: 0px;
     width: 150px;
     height: 150px;
@@ -268,30 +429,25 @@ span:hover .btnctnrep2:before{
     text-decoration: none;
     border: solid black 2px;
     content:"contact@mail.com";
-}
-
-.btn1{
-    background-color: #FD5300;
-    border-radius: 16px;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    border: solid black 2px;
-    
-}
-
-.btn1:hover{
-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-background-color: black;
-color: white;
+    font-size: 15px;
 }
 
 .formcase{
+    
     border: solid black 2px;
 }
 
 .formcase:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(118, 191, 203, 0.5);
+}
+
+.formulaire{
+    text-align: center;
+}
+
+.formulaire h2{
+    font-size: 45px;
 }
 
 .btnproj{
@@ -304,22 +460,13 @@ color: white;
     left: 0;
     right: 0;
     top: 150%;
-    width: 20%;
-}
-
-.img_ronde{
-    border: solid black 2pxs;
-    overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50%;
-    width:150px;
-    height:150px;
+    width: 50%;
 }
 
 .ctn_features{
     display: flex;
     justify-content: space-between;
+    padding: 20px 20px 0 20px;
 }
 
 .featbox{
@@ -332,8 +479,10 @@ color: white;
 .descriptTeam {
     text-align: center;
 }
+/*//////////////////////////////// FIN PAGE TEAM ET FORMULAIRE //////////////////////////////*/
 
-/* FOOTER */
+/*  //////////////////////////////// DEBUT FOOTER ////////////////////////////// */
+
 .blocFooter1
 {
     background-color: #E8E8E8;
@@ -361,7 +510,7 @@ color: white;
  ul li{
     color: #434748;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 18px;
     line-height: 1.625rem;
 }
@@ -380,34 +529,22 @@ color: white;
 }
 
 #newsletterbutton {
-    width: 200px;
-    height: 30px;
+    height: 40px;
     font-size: 14px;
     color: #434748 ;
+    font-weight: bold;
     background-color: rgba(118, 191, 203, 1);
     border: none;
+    text-align: center;
 }
 
-.box1{
-    
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#newsletterbutton:hover {
+background-color: #FD5300;
+color: #fff;
 }
 
-.box2{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.box3{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 .box3 img:hover {
     color:#FD5300;
-
-}
-
-
-.box4{
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #clic{
@@ -415,8 +552,12 @@ color: white;
     font-size: 14px;
     text-decoration: none;
     padding-left: 5px;
-    
 }
+
+#clic:hover {
+    color:#FD5300;
+}
+
 #clic:visited{
     color: white;
     text-decoration: none;
@@ -427,8 +568,12 @@ i{
     font-size: 30px;
     padding: 10px;
 }
+i:hover {
+    color: #FD5300;
+}
 
 #apple{
     height: 55px;
     width: 167px;
 }
+/*  //////////////////////////////// FIN FOOTER ////////////////////////////// */
