@@ -74,13 +74,13 @@ button{
     cursor: pointer;
 }
 
-/* header*/
-.headerBg {
+/* ////////////////////// PAGE PROJETEZ-VOUS ///////////////////////*/
+.hd-project-Bg {
         position: relative;
         z-index: 1;
 }
 
-.headerBg::before {
+.hd-project-Bg::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -96,19 +96,19 @@ button{
         opacity: .4;
 }
 
-.headerText {
+.hd-project-Text {
     z-index: 1;
     padding: 80px;
     text-align: center;
     font-size: 56px;
     font-weight: bold;
 }
-.headerText h1 {
+.hd-project-Text h1 {
         text-transform: uppercase;
         font-weight: bold;
 }
 
-.headerText p {
+.hd-project-Text p {
     font-size: 56px;
 }
 
@@ -169,9 +169,6 @@ button{
     grid-template-columns: repeat(3, 1fr);
 }
 
-
-
-
 .ctn-features1 {
     grid-column: 0/1;
     text-align: center; 
@@ -210,6 +207,7 @@ button{
     border: solid black 2px;
 }
 
+/* ////////////////////// PAGE PROJETEZ-VOUS ///////////////////////*/
 
 /*Page Team*/
 .header-team{
