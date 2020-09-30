@@ -7,7 +7,7 @@ body {
     background: #fff;
     line-height: 1.25;
     font-size: 24px;
-    margin-left: 2%;
+
 }
 
 /*  ///////////////////////////// NAVBARRE ////////////////////////////////////*/
@@ -51,7 +51,17 @@ a{
     display: flex;
     text-align: center;
     align-items: center;
+    background: #A6D5DD;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    display: flex;
     text-align: center;
+    align-items: center;
     background: #A6D5DD;
     width: 150%;
     height: 150%;
@@ -181,7 +191,7 @@ button{
 .bouton_ajouter{
     width: 332px;
     height: 77px;
-    background: #FD5300;
+    background-color: #FD5300;
     border-radius: 10px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -191,7 +201,9 @@ button{
 }
 
 .bouton_ajouter:hover{
-    background: black;
+    background-color: rgba(118, 191, 203, 1);
+    color: white;
+    transition: 0.5s;
 }
 
 #paragraphe_haut{
@@ -211,6 +223,7 @@ button{
     border: solid 1px black;
     width: 870px;
 }
+
 /*  //////////////////////////////// DEBUT FOOTER ////////////////////////////// */
 
 .blocFooter1
@@ -265,16 +278,19 @@ button{
     font-weight: bold;
     background-color: rgba(118, 191, 203, 1);
     border: none;
+    border-radius: 10px;
     text-align: center;
 }
 
 #newsletterbutton:hover {
 background-color: #FD5300;
 color: #fff;
+transition: 0.5s;
 }
 
 .box3 img:hover {
     color:#FD5300;
+    transition: 0.5s;
 }
 
 #clic{
@@ -286,6 +302,7 @@ color: #fff;
 
 #clic:hover {
     color:#FD5300;
+    transition: 0.5s;
 }
 
 #clic:visited{
@@ -300,6 +317,7 @@ i{
 }
 i:hover {
     color: #FD5300;
+    transition: 0.5s;
 }
 
 #apple{
@@ -307,4 +325,3 @@ i:hover {
     width: 167px;
 }
 /*  //////////////////////////////// FIN FOOTER ////////////////////////////// */
-

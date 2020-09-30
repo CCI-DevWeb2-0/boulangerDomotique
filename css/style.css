@@ -9,16 +9,25 @@ body {
     font-size: 16px;
     line-height: 1.25;
 }
+.bloc-ft-info {
+    color: #434748;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.bloc-ft-info:hover {
+        color: #FD5300;
+}
 
 /*  ///////////////////////////// NAVBARRE ////////////////////////////////////*/
 
-a{
+a {
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
-    color: #FD5300; 
+    color: #FD5300;
 }
 
 .liste_ul {
@@ -28,12 +37,10 @@ a{
     height: 50px;
     left: 548px;
     top: 51px;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    color: #FD5300; 
     text-align: center;
     align-items: center;
     padding-right: 20%;
@@ -46,11 +53,29 @@ a{
     padding: 20px;
 }
 
-.liste_ul li:hover{
+.liste_ul li:active {
     display: flex;
     text-align: center;
     align-items: center;
+    padding: 20px;
+}
+
+.liste_ul li:hover {
+    display: flex;
     text-align: center;
+    align-items: center;
+    background: #A6D5DD;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.active {
+    display: flex;
+    text-align: center;
+    align-items: center;
     background: #A6D5DD;
     width: 150%;
     height: 150%;
@@ -58,7 +83,7 @@ a{
     cursor: pointer;
 }
 
-.conteneur_barre_nav{
+.conteneur_barre_nav {
     margin-right: 5%;
     margin-top: 1%;
 }
@@ -129,6 +154,7 @@ button{
 .features {
     display: flex;
     justify-content: space-between;
+    margin: 10px 30px 0;
     line-height: 1.2;
 }
 
@@ -147,13 +173,14 @@ button{
     background-color:#FD5300 ;
     font-size: 36px;
     font-weight: bold;
-    border-radius: 15px
+    border-radius: 16px;
 }
 
 .btn1:hover {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(118, 191, 203, 1);
     color: white;
+    transition: 0.5s;
 }
 
 .btn2 {
@@ -165,13 +192,14 @@ button{
     background-color:#FD5300 ;
     font-size: 22px;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .btn2:hover {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(118, 191, 203, 1);
     color: white;
+    transition: 0.5s;
 }
 
 .image-ronde {
@@ -240,21 +268,24 @@ button{
 }
 
 .ctn-features1 p {
+    margin: 0;
     padding: 50px;
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
 }
 
 .ctn-features2 p {
+    margin: 0;
     padding: 50px;
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
 }
 
 .ctn-features3 p {
+    margin: 0;
     padding: 50px;
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -283,6 +314,10 @@ button{
 .ctn-features3 {
     grid-column:  3/4;
     text-align: center;
+}
+
+.pt-features {
+    color: #FD5300;
 }
 
 /* ////////////////////// PAGE PROJETEZ-VOUS ///////////////////////*/
@@ -387,7 +422,6 @@ button{
     color: white;
     text-decoration: none;
     border: solid black 2px;
-    transition: 0.4s;
     
 }
 
@@ -396,7 +430,6 @@ span:hover .btnctn{
     box-shadow: 0px 5px 10px black;
     background-color: white;
     color: black;
-    transition: 0.4s;
 }
   
 span:hover .btnctnrep:before{
@@ -433,13 +466,13 @@ span:hover .btnctnrep2:before{
 }
 
 .formcase{
-    
     border: solid black 2px;
 }
 
 .formcase:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(118, 191, 203, 0.5);
+    transition: 0.5s;
 }
 
 .formulaire{
@@ -501,17 +534,14 @@ span:hover .btnctnrep2:before{
     flex-shrink: 0;
 }
 
-.blocFooterInfo{
+.blocFooterInfo {
     font-size: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #434748;
 }
 
- ul li{
-    color: #434748;
-    list-style: none;
 
-    font-size: 18px;
+ul li {
+    list-style: none;
     line-height: 1.625rem;
 }
 
@@ -520,7 +550,7 @@ span:hover .btnctnrep2:before{
     height: 20px;
 }
 
-.ctn-newsletter{
+.ctn-newsletter {
     overflow: hidden;
     color: white;
     display: flexbox;
@@ -535,16 +565,19 @@ span:hover .btnctnrep2:before{
     font-weight: bold;
     background-color: rgba(118, 191, 203, 1);
     border: none;
+    border-radius: 10px;
     text-align: center;
 }
 
 #newsletterbutton:hover {
 background-color: #FD5300;
 color: #fff;
+transition: 0.5s;
 }
 
 .box3 img:hover {
     color:#FD5300;
+    transition: 0.5s;
 }
 
 #clic{
@@ -556,6 +589,7 @@ color: #fff;
 
 #clic:hover {
     color:#FD5300;
+    transition: 0.5s;
 }
 
 #clic:visited{
@@ -570,6 +604,7 @@ i{
 }
 i:hover {
     color: #FD5300;
+    transition: 0.5s;
 }
 
 #apple{

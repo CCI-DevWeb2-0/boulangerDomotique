@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#topBtn {
+  display: none;
+  position: sticky;
+  float: right;
+  top: 80%;
+  width: 100px;
+  height: 100px;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #FD5300;;
+  color: #FFF; 
+  cursor: pointer; 
+  border-radius: 50%; 
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+#topBtn:hover {
+  background-color: #A6D5DD;
+}

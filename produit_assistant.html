@@ -5,15 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/produit_assistant.css">
-        <script src="https://kit.fontawesome.com/e7357696fe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/scrolltop.css">
         <title>NOS PRODUITS</title>
     </head>
         <body>
+    <button onclick="topFunction()" id="topBtn" title="remonter en haut de page">^<br>Vers le Haut</button>
             <div class="conteneur_barre_nav">
-                <img src="images/logo_boulanger.png" alt="Boulanger" class="logo" width="200" height="99">
+                <a href="index.html"><img src="images/logo_boulanger.png" alt="Boulanger" class="logo" width="200" height="99"></a>
                 <ul class="liste_ul">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="index.html#ctn-features">Nos Produits</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="active"><a href="index.html#ctn-features">Nos Produits</a></li>
                     <li><a href="team.html">Notre Equipe</a></li>
                     <li><a href="project.html">Projetez-vous</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -37,7 +38,7 @@
                     </div>    
                 </div>  
                 <div id="droit_assistant">
-                    <div class="paragraphe_droit"><p><span class="prix">89,99€</span> <br><span class="orange">-30%</span><br><span class="orange">89,99€</span> <br><br> 0,05€ d'éco-part. <br> Produit neuf <br> <br> <br> <button type="submit" class="bouton_ajouter">AJOUTER AU PANIER</button></p></div>
+                    <div class="paragraphe_droit"><p><span class="prix">89,99€</span> <br><span class="orange">-30%</span><br><span class="orange">89,99€</span> <br><br> 0,05€ d'éco-part. <br> Produit neuf <br> <br> <br> <a href="https://www.boulanger.com/c/assistant-vocal#tr=assistant%20vocal_redirection"><button type="submit" class="bouton_ajouter">AJOUTER AU PANIER</button></a></p></div>
                     <br><p id="ligne_demarcation"></p>
                     <p> <br> <br> Retrait en magasin ou Drive <img src="images/accept_icon.png" alt="valide"> <br> <br> Livraison chez vous dès demain <img src="accept_icon.png" alt="valide"> <br> <br> <br></p>
                     <p id="ligne_demarcation"></p> <br>
@@ -57,7 +58,7 @@
     <div class="box1">
         <h2>RESTONS EN CONTACT !</h2>
     </div>
-    <div class="box2"><button id="newsletterbutton"><a href="contact.html"></a>Inscrivez-vous à la newsletter</button>
+    <div class="box2"><a href="contact.html"><button id="newsletterbutton">Inscrivez-vous à la newsletter</button></a>
     </div>
  
     <br>
@@ -99,11 +100,15 @@
         <!--Bloc numéros 1-->
         <ul>
             <h3 class="blocFooterInfo">Besoin d'aide</h3>
-                <li>Contactez-nous</li>
-                <li>Questions fréquentes</li>
-                <li>Suivre une commande</li>
-                <li> Retourner un produit</li>
-                <li>Nos conditions de livraison</li>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/nous-contacter">Contactez-nous</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/faq">Questions fréquentes</li></a>
+            <li><a class="bloc-ft-info"
+                    href="https://www.boulanger.com/webapp/wcs/stores/servlet/BLAuthentication">Suivre une commande</li>
+            </a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/info/contact/retour.htm">Retourner un produit
+            </li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/servicesb#livraison">conditions de
+                    livraison</li></a>
             <br>
             <li><img src="images/picto_malentendant.png" alt="picto jpg" width="250px"></li>
             <!--Ajouter logo sourds et malentendants-->
@@ -113,16 +118,20 @@
     <div class="blocFooter2">
         <ul>
             <h3 class="blocFooterInfo">A propos de Boulanger</h3>
-                <li>Qui sommes nous</li>
-                <li>Si bien ensemble</li>
-                <li>Nos offres d’emploi</li>
-                <li>Nos engagements</li>
-                <li>L'espace Presse</li>
-                <li>Nos services</li>
-                <li>Essentiel B</li>
-                <li>L'espace fidélité</li>
-                <li>Fondation Boulanger</li>
-                <li>Un monde de liens</li>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.group/logos-filiales/">Qui sommes nous</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/sibienensemble">Si bien ensemble</li>
+            </a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/emploi">Nos offres d’emploi</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/servicesb#engagement">Nos engagements
+            </li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/info/presse">L'espace Presse</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/servicesb">Nos services</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/essentielb">Essentiel B</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/espace-fidelite">L'espace fidélité
+            </li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/fondation">Fondation Boulanger</li>
+            </a>
+            <li><a class="bloc-ft-info" href="https://www.unmondedeliens.com/">Un monde de liens</li></a>
         </ul>
         <!--Bloc numéros 3-->
     </div>
@@ -130,23 +139,32 @@
     <div class="blocFooter2">
         <ul>
             <h3 class="blocFooterInfo">Informations légales</h3>
-                <li>Nos Conditions de Vente</li>
-                <li>Mentions légales</li>
-                <li>Données personnelles</li>
-                <li>Utilisation des Cookies</li>
-                <li>La place de marché</li>
-                <li>Les avis en ligne</li>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/cgv">Nos Conditions de Vente</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/infos-legales">Mentions légales</li>
+            </a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/infos-legales#ong-cs">Utilisation des
+                    Cookies</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/infos-legales#ong-private">Données
+                    personnelles</li></a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/marketplace">La place de marché</li>
+            </a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/avis-produit">Les avis en ligne</li>
+            </a>
         </ul>
     </div>
 
-        <!--Bloc numéros 4-->
+    <!--Bloc numéros 4-->
     <div class="blocFooter2">
         <ul>
             <h3 class="blocFooterInfo">Informations sécurité</h3>
-                <li>Rappel produit</li>
-                <li>Alerte fraude</li>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/rappel-produit">Rappel produit</li>
+            </a>
+            <li><a class="bloc-ft-info" href="https://www.boulanger.com/evenement/informations-clients">Alerte fraude
+            </li></a>
         </ul>
     </div>
     <!--Fin de Footer-->
+    <script src="https://kit.fontawesome.com/0f3e68ca00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
         </body>
 </html>
