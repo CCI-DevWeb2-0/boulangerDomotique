@@ -4,9 +4,10 @@ html {
 
 #topBtn {
   display: none;
-  position: sticky;
+  position: fixed;
   float: right;
-  top: 70%;
+  right: 7px;
+  top: 75%;
   width: 100px;
   height: 100px;
   z-index: 99; 
@@ -17,9 +18,26 @@ html {
   cursor: pointer; 
   border-radius: 50%; 
   font-size: 18px;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 #topBtn:hover {
   background-color: #A6D5DD;
+}
+
+.chatassist{
+    width: 11%;
+    position: sticky;
+    float: right;
+    margin: 0;
+    top: 80vh;
+    z-index: 99;
+    transition: 0.4s;
+}
+
+.chatassist:hover{
+  z-index: 99;
+    width: 11%;
+    content: url(/images/chatbotrep.png);
+    transition: 0.4s;
 }

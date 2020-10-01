@@ -29,7 +29,7 @@
                             class="fas fa-star"></i><i class="fas fa-star"></i><span class="orange">(9avis)</span> Réf : 0001122642
                     </p>
                     <div id="fiche_energie1"><input type="image" src="images/classe_energie.jpg" alt="classe_energie" id="energie"
-                            onclick="myFunction()"></div>
+                            onclick="DisplayImg()"></div>
                     <div id="fiche_energie"><img src="images/fiche_energie.jpg" alt="Fiche_energie" id="fiche_energie3"></div>
                     <div id="image_machine">
                         <div class="machine_laver1"><img src="images/machine_laver_1.png" alt="Samsung1"></div>
@@ -43,7 +43,7 @@
                     <div class="paragraphe_droit">
                         <p><span class="prix">579,00€</span> <br><span class="orange">- 5%</span> <br> <span
                                 class="orange">549,00€</span> <br> 10,00€ d'éco-part. <br> Payez en plusieurs fois <br> Produit neuf
-                            <br> <br> <br> <button type="submit" class="bouton_ajouter">AJOUTER AU PANIER</button></p>
+                            <br> <br> <br> <a href="https://www.boulanger.com/c/lave-linge#tr=lave%20linge_redirection"><button type="submit" class="bouton_ajouter">AJOUTER AU PANIER</button></a></p>
                     </div>
                     <br>
                     <p id="ligne_demarcation"></p>
@@ -181,15 +181,15 @@
         </ul>
     </div>
     <!--Fin de Footer-->
+
     <script src="https://kit.fontawesome.com/0f3e68ca00.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script>
-        function myFunction() {
-            var x = document.getElementById("fiche_energie3");
-            if (window.getComputedStyle(x).visibility === "hidden") {
-                x.style.visibility = "visible";
-            }
-        };  
+        function DisplayImg(){
+            document.getElementById("fiche_energie3").style.display = "block";
+        }
+        document.getElementById("energie").addEventListener("click", DisplayImg);
+
     </script>
         </body>
 </html>

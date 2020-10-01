@@ -112,11 +112,17 @@ button{
     flex-flow: column wrap;
 }
 
-#fiche_energie {
+#fiche_energie{
     z-index: 2;
     float: left;
     width: min-content;
-    }
+}
+
+#fiche_energie3{
+    display: none;
+    position: absolute;
+    /* visibility: hidden;  */
+}
 
 #image_mini_machine{
     display: inline;
@@ -140,10 +146,6 @@ button{
     height: auto;
     float: right;
     
-}
-
-#fiche_energie3{
-    visibility: hidden; 
 }
 
 .fas{
