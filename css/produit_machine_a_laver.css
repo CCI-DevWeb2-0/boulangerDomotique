@@ -94,6 +94,7 @@ button{
 
 #gauche_machine{
     order: 1;
+    width: min-content;
 }
 
 #droit_machine{
@@ -105,10 +106,17 @@ button{
     order: 4;
 }
 
-#image{
+#image_machine{
+    z-index: 1;
     display: flex;
     flex-flow: column wrap;
 }
+
+#fiche_energie {
+    z-index: 2;
+    float: left;
+    width: min-content;
+    }
 
 #image_mini_machine{
     display: inline;
@@ -132,6 +140,10 @@ button{
     height: auto;
     float: right;
     
+}
+
+#fiche_energie3{
+    visibility: hidden; 
 }
 
 .fas{
@@ -173,9 +185,7 @@ button{
 }
 
 .bouton_ajouter:hover{
-    background-color: rgba(118, 191, 203, 1);
-    color: white;
-    transition: 0.5s;
+    background: black;
 }
 
 #paragraphe_haut{
