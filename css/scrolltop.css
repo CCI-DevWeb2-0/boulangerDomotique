@@ -38,6 +38,6 @@ html {
 .chatassist:hover{
   z-index: 99;
     width: 11%;
-    content: url(../images/chatbotrep.png);
+    content: url(/images/chatbotrep.png);
     transition: 0.4s;
 }
