@@ -115,7 +115,7 @@ button{
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('/images/bg-page-home.jpg') no-repeat center;
+        background: url('../images/bg-page-home.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -228,7 +228,7 @@ button{
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('/images/bg-projetez-vous.jpg') no-repeat center;
+        background: url('../images/bg-projetez-vous.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -338,7 +338,7 @@ button{
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('/images/bg-notre-equipe.jpg') no-repeat center;
+        background: url('../images/bg-notre-equipe.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -358,7 +358,7 @@ button{
         bottom: 100px;
         left: 0;
         right: 0;
-        background: url('/images/bg-nous-contacter.png') no-repeat center;
+        background: url('../images/bg-nous-contacter.png') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
