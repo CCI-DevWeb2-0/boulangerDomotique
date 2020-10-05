@@ -115,7 +115,7 @@ button{
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('/images/pagehome.jpg') no-repeat center;
+        background: url('../images/pagehome.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -228,7 +228,7 @@ button{
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('/images/projetezvous.jpg') no-repeat center;
+        background: url('../images/projetezvous.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -338,11 +338,11 @@ button{
         bottom: 0;
         left: 0;
         right: 0;
-        background: url('/images/notreequipe.jpg') no-repeat center;
+        background: url('../images/notreequipe.jpg') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;;
+        background-size: cover;
         opacity: .4;
 }
 .hd-image-Bg2 {
@@ -358,11 +358,11 @@ button{
         bottom: 100px;
         left: 0;
         right: 0;
-        background: url('/images/nouscontacter.png') no-repeat center;
+        background: url('../images/nouscontacter.png') no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;;
+        background-size: cover;
         opacity: .4;
 }
 
