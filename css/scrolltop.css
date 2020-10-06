@@ -7,7 +7,7 @@ html {
   position: fixed;
   float: right;
   right: 7px;
-  top: 75%;
+  top: 70%;
   width: 100px;
   height: 100px;
   z-index: 99; 
@@ -26,17 +26,20 @@ html {
 }
 
 .chatassist{
-    width: 11%;
     position: sticky;
     float: right;
     margin: 0;
     top: 80vh;
-    z-index: 99;
+    z-index: 10;
     transition: 0.4s;
 }
 
 .chatassist:hover{
-  z-index: 99;
+    position: sticky;
+    float: right;
+    z-index: 10;
+    margin: 0;
+    top: 80vh;
     width: 11%;
     content: url(../images/chatbotrep.png);
     transition: 0.4s;

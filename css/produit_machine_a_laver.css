@@ -8,6 +8,15 @@ body {
     line-height: 1.25;
     font-size: 24px;
 }
+.bloc-ft-info {
+    color: #434748;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.bloc-ft-info:hover {
+        color: #FD5300;
+}
 /*  ///////////////////////////// NAVBARRE ////////////////////////////////////*/
 
 a{
